@@ -1,0 +1,25 @@
+define_design_lib WORK -path /home/users/3/zhengy/VLSI/SYN/WORK
+analyze -f verilog /home/users/3/zhengy/VLSI/SYN/FSM.v
+elaborate FSM
+current_design FSM
+link
+uniquify
+
+current_design FSM
+create_clock -period 10 CLK
+set_input_delay -clock CLK 1 {RST_N REQ}
+set_output_delay -clock CLK 1 {ACK}
+
+compile -ungroup_all -map_effort medium
+compile -incremental_mapping -map_effort medium
+check_design
+
+report_constraint -all_violators
+write -f verilog -output FSM.vh
+write_sdc FSM.sdc
+write_sdf -version 2.1 FSM.sdf
+write -hier -output FSM.db
+report_timing > timing.rep
+report_cell   > cell.rep
+report_power  > power.rep
+quit

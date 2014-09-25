@@ -1,0 +1,4 @@
+set search_path "./"
+set target_library "/cds/local/osu_stdcells/lib/tsmc025/lib/osu025_stdcells.db"
+set link_library "/cds/local/osu_stdcells/lib/tsmc025/lib/osu025_stdcells.db"
+set symbol_library "/cds/local/osu_stdcells/lib/tsmc025/lib/osu025_stdcells.db"

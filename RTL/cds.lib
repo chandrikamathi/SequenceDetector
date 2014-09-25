@@ -1,0 +1,5 @@
+DEFINE OSU_stdcells_tsmc025 /cds/osu_stdcells/lib/tsmc025/OSU_stdcells_tsmc025
+INCLUDE /cds/local/cdssetup/cds.lib
+#Removed by ddDeleteObj: DEFINE FSM /home/users/3/syousuf/VLSI/PAR/FSM
+#Removed by ddDeleteObj: DEFINE changeme /home/users/3/zheng/VLSI/PAR/changeme
+DEFINE FSM /home/users/3/zhengy/VLSI/PAR/FSM

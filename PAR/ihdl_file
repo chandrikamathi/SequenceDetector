@@ -1,0 +1,6 @@
+dest_sch_lib := FSM
+ref_lib_list := FSM
+power_net := vdd
+ground_net := gnd
+alias_module := cds_alias 
+cont_assign_symbol := basic patch symbol
